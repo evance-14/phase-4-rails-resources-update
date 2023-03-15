@@ -33,6 +33,7 @@ class BirdsController < ApplicationController
     end
   end
 
+  #custom method to increment likes
   def increment_likes
     bird = Bird.find(params[:id])
     if bird 
